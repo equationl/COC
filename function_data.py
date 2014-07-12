@@ -1,6 +1,7 @@
 #coding=utf-8
 
 import androidhelper
+from class_data import * #载入公共类
 from config import *  #载入程序配置、常量信息
 from filedata import * #载入资源文件数据
 
@@ -32,3 +33,12 @@ def public_install():
       install.setfiledata(i) #设置文件数据
       install.check_file() #检测并创建文件
       
+
+ '''
+ *初始化字符
+ *在输入字符后应调用该函数进行处理
+ '''     
+ 
+ def public_init_string():
+     #敏感词替换
+     #敏感词存放在

@@ -38,7 +38,7 @@ class Public_init:
    '''*检测路径是否存在，不存在则创建。
       *成功不返回，失败返回失败信息'''
    def check_path(s):
-      if !exists(s.path):
+      if not exists(s.path):
          try:
             makedirs(s.path)
          except Exception as e:
